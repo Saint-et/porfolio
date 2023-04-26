@@ -1,0 +1,285 @@
+@import "../utils/variable";
+
+.animation {
+  animation: fadein 300ms;
+  -moz-animation: fadein 300ms; /* Firefox */
+  -webkit-animation: fadein 300ms; /* Safari et Chrome */
+  -o-animation: fadein 300ms; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation square */
+.circles {
+  position: absolute;
+  margin-left: -60px;
+  margin-top: -10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circles.active {
+  position: absolute;
+  margin-left: -60px;
+  margin-top: -10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  animation: jello-horizontal 0.9s linear;
+}
+
+.circles li {
+  position: absolute;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  animation: animate 45s linear infinite;
+  bottom: -150px;
+  border-radius: 100%;
+  color: white;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0);
+  transition: 500ms;
+  &:hover{
+    box-shadow: 10px 5px 5px #0000002c;
+  }
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 20s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 2s;
+  animation-duration: 32s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 105px;
+  height: 105px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 105px;
+  height: 105px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+  animation-duration: 41s;
+}
+//@keyframes animate {
+//  0% {
+//    transform: translateY(0);
+//    opacity: 1;
+//  }
+//  95% {
+//    transform: translateY(-950px);
+//    opacity: 0.9;
+//  }
+//  100% {
+//    transform: translateY(-1000px);
+//    opacity: 0;
+//  }
+//}
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-1000px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* Animation square END */
+
+/* Animation underline progressive light */
+
+.underline {
+  --s: 0.1em; /* the thickness of the line */
+  --c: rgb(0, 0, 0); /* the color */
+
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+.underline[data-theme="dark"] {
+  --s: 0.1em; /* the thickness of the line */
+  --c: rgb(255, 255, 255); /* the color */
+
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+.ctent_arti:hover > .underline {
+  --_p: 100%;
+}
+/* Animation underline progressive END */
+
+.bg{
+    animation: slide 58s ease-in-out infinite alternate;
+    background-image: linear-gradient(
+      -60deg,
+      rgb(0, 110, 153) 50%,
+      rgb(212, 212, 212) 50%
+    );
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+  }
+.bg[data-theme="default"] {
+    animation: slide 58s ease-in-out infinite alternate;
+    background-image: linear-gradient(
+      -60deg,
+      #000f38 50%,
+      #00aaff 50%
+    );
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+  }
+  .bg[data-theme="dark"] {
+    animation: slide 58s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    #080a47 50%,
+    #6c0d8b 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+  }
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 59s;
+}
+
+.bg3 {
+  animation-duration: 60s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+

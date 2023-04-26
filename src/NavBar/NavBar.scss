@@ -1,0 +1,62 @@
+@import "../sass/utils/variable";
+@import "../sass/components/button";
+@import "../sass/components/checkbox";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  color: $text_black;
+  background-color: $navbar_light;
+  flex-wrap: wrap;
+  height: 60px;
+  z-index: 100000;
+}
+.navbar[data-theme="default"] {
+  color: $text_black;
+  background-color: $navbar_light;
+}
+.navbar[data-theme="dark"] {
+  color: $text_white;
+  background-color: $navbar;
+}
+.button_navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+.blanket {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: #000000a1;
+}
+.menu_navbar {
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  margin-top: 10px;
+  flex-direction: column;
+  max-width: 500px;
+  color: $text_black;
+  background-color: $navbar_light;
+}
+.menu_navbar[data-theme="default"] {
+  color: $text_black;
+  background-color: $navbar_light;
+}
+.menu_navbar[data-theme="dark"] {
+  color: $text_white;
+  background-color: $navbar;
+}
+.hidden_button {
+  display: none;
+}

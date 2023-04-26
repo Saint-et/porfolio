@@ -1,0 +1,41 @@
+@import "./utils/variable";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import './components/scrollbar';
+
+html {
+  color-scheme: light;
+}
+html[data-theme="default"] {
+  color-scheme: light;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: "Titillium Web", sans-serif;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.copy {
+  -webkit-user-select: text;
+  -webkit-touch-callout: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+img {
+  object-fit: cover;
+}
+p {
+  font-size: 18px;
+}
