@@ -51,7 +51,8 @@ html[data-theme="dark"] {
   margin-top: 10px;
   border-radius: 15px;
   padding: 10px;
-  background-color: #1b1b1b;
+  background:linear-gradient(-50deg, #e7e7e7, #ffffff);
+  box-shadow: 10px 5px 5px rgb(87, 87, 87);
 }
 .content_Name[data-theme="default"] {
   background:linear-gradient(-50deg, #e7e7e7, #ffffff);
@@ -131,8 +132,8 @@ html[data-theme="dark"] {
   border-radius: 10px;
   padding-bottom: 50px;
   backdrop-filter: blur(5px);
-  color: #000000;
-  background: #fff;
+  color: $text_black;
+  background: rgba($navbar_light, 0.9);
 }
 .ctent_arti[data-theme="default"] {
   color: $text_black;
@@ -168,6 +169,7 @@ html[data-theme="dark"] {
   align-items: center;
   flex-direction: column;
   margin: 10px;
+  color: $text_black;
   background-color: rgb(247, 247, 247);
   border-radius: 15px;
   width: 100%;
@@ -192,7 +194,7 @@ html[data-theme="dark"] {
 }
 .progressBar {
   border-radius: 2px;
-  background: #ffffff;
+  background: #0019a7;
   height: 20px;
 }
 .progressBar[data-theme="default"] {
@@ -225,4 +227,22 @@ html[data-theme="dark"] {
     background: #000000;
     box-shadow: none;
   }
+}
+.contact{
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+.contact[data-theme="default"] {
+  border-bottom: 1px solid black;
+}
+.contact[data-theme="dark"] {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.contact > p {
+  margin: 0px;
 }

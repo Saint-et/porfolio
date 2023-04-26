@@ -34,7 +34,7 @@ const Home = (props) => {
 
     const [fullScreenImg, setFullScreenImg] = useState('')
 
-    if (!Data_Realisation || !props.user || !props.localTheme) return (
+    if (!Data_Realisation || !props.user) return (
         <>
             <div className='cter_sect'>
                 <div className='ctent_arti' style={{ paddingTop: 50 }} data-theme={props.localTheme}>
@@ -165,19 +165,19 @@ const Home = (props) => {
             <div className='cter_sect'>
                 <div className='ctent_arti' style={{ borderRadius: 0, maxWidth: '100%' }} data-theme={props.localTheme}>
                     <h2 className='underline' data-theme={props.localTheme}>Contact</h2>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <div className='contact' style={{ display: 'flex', alignItems: 'center' }} data-theme={props.localTheme}>
                         <p translate='no'>Mon CV:&nbsp;</p>
-                        <Link to={CV} target="_blank" className='buttonCircleBlue' style={{ width: 30, height: 30, fontSize: 15, display: 'flex', justifyContent: 'center', alignItems: 'center' }} title='Copié'>
+                        <Link to={CV} target="_blank" className='buttonCircleBlue' style={{ width: 30, height: 30, fontSize: 15, display: 'flex', justifyContent: 'center', alignItems: 'center' }} title='Voir'>
                             <FontAwesomeIcon icon={faEye} />
                         </Link>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <div className='contact' style={{ display: 'flex', alignItems: 'center' }} data-theme={props.localTheme}>
                         <p translate='no'>Téléphone: {props.user.telephone}</p>
                         <div className='buttonCircleBlue' onClick={() => { handleCopy(props.user.telephone) }} style={{ width: 30, height: 30, fontSize: 15, display: 'flex', justifyContent: 'center', alignItems: 'center' }} title='Copié'>
                             <FontAwesomeIcon icon={faCopy} />
                         </div>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <div className='contact' style={{ display: 'flex', alignItems: 'center' }} data-theme={props.localTheme}>
                         <p translate='no'>Email: {props.user.email}</p>
                         <div onClick={() => window.location = `mailto:${props.user.email}`} className='buttonCircleRed' style={{ width: 30, height: 30, fontSize: 15, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <FontAwesomeIcon icon={faEnvelope} />

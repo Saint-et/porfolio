@@ -69,19 +69,19 @@ const NaveBar = (props, { mailto }) => {
               </div>
             </div>
             <h2 style={{ display: 'flex', justifyContent: 'center' }}>{props.user.firstname}</h2>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div className='contact' style={{ display: 'flex', alignItems: 'center' }} data-theme={props.localTheme}>
               <p translate='no'>Mon CV:&nbsp;</p>
-              <Link to={CV} target="_blank" className='buttonCircleBlue' style={{ width: 30, height: 30, fontSize: 15, display: 'flex', justifyContent: 'center', alignItems: 'center' }} title='Copié'>
+              <Link to={CV} target="_blank" className='buttonCircleBlue' style={{ width: 30, height: 30, fontSize: 15, display: 'flex', justifyContent: 'center', alignItems: 'center' }} title='Voir'>
                 <FontAwesomeIcon icon={faEye} />
               </Link>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div className='contact' style={{ display: 'flex', alignItems: 'center' }} data-theme={props.localTheme}>
               <p translate='no'>Téléphone: {props.user.telephone}&nbsp;</p>
               <div className='buttonCircleBlue' onClick={() => { handleCopy(props.user.telephone) }} style={{ width: 30, height: 30, fontSize: 15, display: 'flex', justifyContent: 'center', alignItems: 'center' }} title='Copié'>
                 <FontAwesomeIcon icon={faCopy} />
               </div>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div className='contact' style={{ display: 'flex', alignItems: 'center' }} data-theme={props.localTheme}>
               <p translate='no'>Email: {props.user.email}&nbsp;</p>
               <div onClick={() => window.location = `mailto:${props.user.email}`} className='buttonCircleRed' style={{ width: 30, height: 30, fontSize: 15, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <FontAwesomeIcon icon={faEnvelope} />
@@ -96,6 +96,7 @@ const NaveBar = (props, { mailto }) => {
       </div>}
 
       <div className='navbar' data-theme={props.localTheme}>
+      {!props.localTheme && <img style={{ width: 140 }} src={imgPro_dark} alt="" onMouseDown={(e) => e.preventDefault()} onContextMenu={(e) => e.preventDefault()} />}
         {props.localTheme === 'dark' && <img style={{ width: 140 }} src={imgPro_white} alt="" onMouseDown={(e) => e.preventDefault()} onContextMenu={(e) => e.preventDefault()} />}
         {props.localTheme === 'default' && <img style={{ width: 140 }} src={imgPro_dark} alt="" onMouseDown={(e) => e.preventDefault()} onContextMenu={(e) => e.preventDefault()} />}
         <div style={{ display: 'flex', width: 'max-content' }}>

@@ -30,11 +30,15 @@ import Groupomania3 from '../assets/Groupomania/Groupomania3.png';
 // Realisation_Personnel
 import Eventv1 from '../assets/images/logo_eventv1.png';
 import Eventv2 from '../assets/images/vieux-fond-noir-texture-grunge-fond-ecran-sombre-tableau-noir-tableau-noir-mur-salle.jpg';
+import EventvmobileImg1 from '../assets/images/logo_eventv1Mobile.png';
 //___
 // Eventv1
 import EventvImg1 from '../assets/eventv/eventv3.png';
 import EventvImg2 from '../assets/eventv/eventv2.png';
 import EventvImg3 from '../assets/eventv/eventv1.png';
+//___
+// Eventv1Mobile
+import Eventvmobile1 from '../assets/eventv/eventmobile.jpg';
 //___
 // Eventv2
 import EventvImg4 from '../assets/eventv/ezgif-5-cee98ce57f.gif';
@@ -128,6 +132,15 @@ export const Data_Realisation_Personnel = [
         image1: EventvImg1,
         image2: EventvImg2,
         image3: EventvImg3
+    },
+    {
+        title: 'Event-v1 Mobile',
+        image: EventvmobileImg1,
+        data: `J’ai commencé à m’intéresser à react native pour pouvoir faire une application mobile alors j’ai connecté mon application mobile sur le backend du site pour compléter mon site
+         dans un but de m'entraînner a utilisé mes outils.`,
+        image1: Eventvmobile1,
+        image2: null,
+        image3: null
     },
     {
         title: 'Event-v2',
