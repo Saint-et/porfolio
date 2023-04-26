@@ -1,6 +1,5 @@
 import './sass/body.scss';
 import React, { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
 import NaveBar from './NavBar/NavBar';
 import Home from './Layouts/Home/Home';
 import { user } from './data/Data';
@@ -38,9 +37,7 @@ function App() {
     <>
       <NaveBar handleTheme={handleTheme} localTheme={localTheme} user={user} />
       <div style={{ paddingTop: 60 }}>
-        <Routes>
-          <Route path="/" element={<Home localTheme={localTheme} user={user} />} />
-        </Routes>
+        <Home localTheme={localTheme} user={user} />
         <div className="bg" data-theme={localTheme}></div>
         <div className="bg bg2" data-theme={localTheme}></div>
         <div className="bg bg3" data-theme={localTheme}></div>

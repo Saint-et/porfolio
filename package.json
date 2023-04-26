@@ -1,7 +1,7 @@
 {
   "name": "mon-app",
   "version": "0.1.0",
-  "homepage": "https://Saint-et.github.io/porfolio",
+  "homepage": "https://Saint-et.github.io/porfolio/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
