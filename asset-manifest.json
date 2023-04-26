@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/porfolio/static/css/main.0ee72b54.css",
-    "main.js": "/porfolio/static/js/main.8e551a0b.js",
+    "main.css": "/porfolio/static/css/main.bee2d7f2.css",
+    "main.js": "/porfolio/static/js/main.128b267d.js",
     "static/js/787.6d185335.chunk.js": "/porfolio/static/js/787.6d185335.chunk.js",
     "static/media/ezgif-5-cee98ce57f.gif": "/porfolio/static/media/ezgif-5-cee98ce57f.1be36486d7ab414231aa.gif",
     "static/media/EventvImg1.png": "/porfolio/static/media/EventvImg1.db2c36be77417da6c917.png",
@@ -22,6 +22,7 @@
     "static/media/Sass.svg.png": "/porfolio/static/media/Sass.svg.aa16d6441e3e941f60c1.png",
     "static/media/nodejs.png": "/porfolio/static/media/nodejs.aa8bc616bb8252fa29f3.png",
     "static/media/produit.png": "/porfolio/static/media/produit.cdca0f54cd542af5c04f.png",
+    "static/media/eventmobile.jpg": "/porfolio/static/media/eventmobile.16b59e2439b62da5d4dc.jpg",
     "static/media/eventv3.png": "/porfolio/static/media/eventv3.973246df92aafb49c221.png",
     "static/media/hot-sauce.jpg": "/porfolio/static/media/hot-sauce.83e397a05f67ed2b912d.jpg",
     "static/media/MetaImageComp.jpg": "/porfolio/static/media/MetaImageComp.50fce8a48898ccd63582.jpg",
@@ -33,6 +34,7 @@
     "static/media/kanap3.png": "/porfolio/static/media/kanap3.088e7006085e946deaad.png",
     "static/media/form.png": "/porfolio/static/media/form.94b15966bb05592690a3.png",
     "static/media/groupomania.png": "/porfolio/static/media/groupomania.4ec49304c372fe7e9342.png",
+    "static/media/logo_eventv1Mobile.png": "/porfolio/static/media/logo_eventv1Mobile.7f2b46098a8d8a839178.png",
     "static/media/html5-icon-1.png": "/porfolio/static/media/html5-icon-1.7d941302134320a2ad7b.png",
     "static/media/logo_eventv1.png": "/porfolio/static/media/logo_eventv1.b9231aa33673092c9ff4.png",
     "static/media/Mongodb-Transparent.png": "/porfolio/static/media/Mongodb-Transparent.3fd4ac4e5c81365ab878.png",
@@ -40,12 +42,12 @@
     "static/media/Git.png": "/porfolio/static/media/Git.0ee09c1827147f98b2cb.png",
     "static/media/Sequelize.png": "/porfolio/static/media/Sequelize.d98b2554b49e415e0c08.png",
     "index.html": "/porfolio/index.html",
-    "main.0ee72b54.css.map": "/porfolio/static/css/main.0ee72b54.css.map",
-    "main.8e551a0b.js.map": "/porfolio/static/js/main.8e551a0b.js.map",
+    "main.bee2d7f2.css.map": "/porfolio/static/css/main.bee2d7f2.css.map",
+    "main.128b267d.js.map": "/porfolio/static/js/main.128b267d.js.map",
     "787.6d185335.chunk.js.map": "/porfolio/static/js/787.6d185335.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ee72b54.css",
-    "static/js/main.8e551a0b.js"
+    "static/css/main.bee2d7f2.css",
+    "static/js/main.128b267d.js"
   ]
 }
